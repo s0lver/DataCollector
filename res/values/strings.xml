@@ -1,4 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="app_name">Data Collector</string>
+    <string name="labelSwitchLocation">Collect location</string>
+    <string name="labelSwitchAccelerometer">Collect accelerometer</string>
+    <string name="labelStartReadings">Start readings</string>
+    <string name="labelStopReadings">Stop readings</string>
+    <string name="labelSpinner">Select your mobility:</string>
+    <string name="labelSpecifySettings">Specify settings</string>
+    <string-array name="mobilities">
+        <item>Static</item>
+        <item>Walking slow</item>
+        <item>Walkin fast</item>
+        <item>Running</item>
+        <item>Vehicle slow 20km/h</item>
+        <item>Vehicle medium 40km/h</item>
+        <item>Vehicle fast 60km/h</item>
+    </string-array>
 </resources>

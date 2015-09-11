@@ -3,11 +3,49 @@
               android:orientation="vertical"
               android:layout_width="fill_parent"
               android:layout_height="fill_parent"
-        >
+              android:padding="10dp">
     <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="@string/labelSpecifySettings"
+            android:id="@+id/textView3" android:layout_gravity="center_horizontal"/>
+    <Switch
             android:layout_width="fill_parent"
             android:layout_height="wrap_content"
-            android:text="Hello World, MainActivity"
-            />
+            android:text="@string/labelSwitchLocation"
+            android:id="@+id/swCollectLocation" android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="5dp" android:textStyle="bold" android:checked="true"/>
+    <Switch android:layout_width="fill_parent" android:layout_height="wrap_content"
+            android:text="@string/labelSwitchAccelerometer" android:id="@+id/swCollectAccelerometer"
+            android:layout_gravity="center_horizontal" android:textStyle="bold" android:checked="true"
+            android:layout_marginBottom="5dp"/>
+    <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_marginBottom="20dp">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="@string/labelSpinner"
+                android:id="@+id/textView2" android:layout_gravity="center_vertical"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:id="@+id/textView" android:layout_gravity="center_vertical"/>
+        <Spinner
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/spnMobilities" android:layout_gravity="center_horizontal"
+                />
+    </LinearLayout>
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/labelStartReadings"
+            android:id="@+id/btnStartReadings" android:layout_gravity="center_horizontal"
+            android:onClick="clickBtnReadings"/>
 </LinearLayout>
 
